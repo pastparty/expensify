@@ -1,5 +1,5 @@
 // const person = {
-//     name: 'BRATVOG3L',
+//     name: 'xx',
 //     age: 28,
 //     location: {
 //         city: 'Berlin',
@@ -33,7 +33,7 @@ const address = [
     'Blorgstreet 23', 'Berlin', '11011', 'Tschörmani'
 ];
 
-const [, city, zip, state = 'Walpurgistanhausen'] = address;
+const [, city, zip, state = 'ftown'] = address;
 
 console.log(`You are in ${zip} ${state}.`);
 

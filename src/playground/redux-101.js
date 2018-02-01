@@ -23,38 +23,31 @@ const resetCount = () => ({
 });
 
 
-
-
 const countReducer = (state = { count: 0 }, action) => {
     switch (action.type) {
-        case 'INCREMENT': {
+        case 'INCREMENT':
             return {
                 count: state.count + action.incrementBy
             };
-        }
-        case 'DECREMENT': {
+        case 'DECREMENT':
             return {
                 count: state.count - action.decrementBy
             };
-        }
-        case 'SET': {
+        case 'SET':
             return {
                 count: action.count
             }
-        }
-        case 'RESET': {
+        case 'RESET':
             return {
                 count: 0
             };
-        }
-        case 'BRATVOGEL': {
+        case 'BRATVOGEL':
             return {
                 count: 'BLARGELGARGEL'
-            }
         }
-        default: {
+        default:
             return state;
-        }
+
     }
 };
 
